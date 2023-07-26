@@ -34,7 +34,7 @@ def main():
         # Ask the user for the playlist name
         playlist_name = input("\nWhat's the playlist name? ")
         # Create a new playlist for the user (private, not public)
-        playlist = spotify_client.user_playlist_create('31cucljabpztavtiviqpjamf2csm', playlist_name, public=False)
+        playlist = spotify_client.user_playlist_create('Your user Id', playlist_name, public=False)
         print(f"\nPlaylist '{playlist['name']}' was created successfully.")
 
         # Get the URIs (unique identifiers) of the recommended tracks
