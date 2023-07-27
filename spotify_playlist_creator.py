@@ -40,7 +40,7 @@ def main():
         # Get the URIs (unique identifiers) of the recommended tracks
         playlist_track_uris = [track['uri'] for track in recommended_tracks]
         # Add the recommended tracks to the newly created playlist
-        spotify_client.user_playlist_add_tracks('31cucljabpztavtiviqpjamf2csm', playlist['id'], playlist_track_uris)
+        spotify_client.user_playlist_add_tracks('Your user id', playlist['id'], playlist_track_uris)
         print(f"\nRecommended tracks successfully added to playlist '{playlist['name']}'.")
 
     except SpotifyException as e:
